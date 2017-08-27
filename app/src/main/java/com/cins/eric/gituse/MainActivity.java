@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.test2);
 
-        button = (Button) findViewById(R.id.btn_test2);
+        button = (Button) findViewById(R.id.btn_t2);
 
 
         mTextMessage = (TextView) findViewById(R.id.message);
