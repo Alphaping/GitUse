@@ -5,13 +5,17 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
     private Button button;
+    private EditText editText;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -34,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
     };
 
+    int s=1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,10 +46,17 @@ public class MainActivity extends AppCompatActivity {
 
         button = (Button) findViewById(R.id.btn_t2);
 
-
+        editText = (EditText) findViewById(R.id.et_so);
         mTextMessage = (TextView) findViewById(R.id.message);
+
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+      button.setOnClickListener(new View.OnClickListener() {
+        @Override public void onClick(View view) {
+          Toast.makeText(getApplicationContext(), "ss",Toast.LENGTH_LONG);
+        }
+      });
     }
 
 }
