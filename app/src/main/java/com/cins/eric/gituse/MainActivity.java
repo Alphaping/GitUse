@@ -57,11 +57,6 @@ public class MainActivity extends AppCompatActivity {
           Toast.makeText(getApplicationContext(), "ss",Toast.LENGTH_LONG);
         }
       });
-        editText.setText("ss");
-        editText.setText("ss"); editText.setText("ss");
-        editText.setText("ss");
-        editText.setText("ss");
-
 
     }
 
